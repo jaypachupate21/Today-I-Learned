@@ -16,10 +16,10 @@
             <img src="/img/pngwing.com.png" height="68" width="68" alt="msg_logo"/>
             <h1>Today I Learned</h1>
             </div>
-            <button class="btn btn-large">Share a Fact</button>
+            <button class="btn btn-large btn-open">Share a Fact</button>
         </header>
         
-        <form class="fact-form">
+        <form class="fact-form hidden">
             <input type="text" placeholder="share a fact with world"/>
             <span>200</span>
             <input type="text" placeholder="Trustworthy source"/>
@@ -46,7 +46,7 @@
                 </ul>
             </aside>
             <section>
-                <ul>
+                <ul class="facts-list">
                     <li class="fact">
                         <p>React is being developed by Meta (formerly Facebook) <a class="source" href="https://www.google.com/technology/" target="_blank">(Source)</a></p>
                         <span class="tag" style="background-color:#3b82f6;">technology</span>
@@ -73,5 +73,6 @@
         
         
         </div> 
+        <script src="/js/script.js"></script>
     </body>
 </html>
