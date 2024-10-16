@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Today I learned</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Sono:wght@200..800&display=swap" rel="stylesheet">
+        <link href="/css/style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="container">
+        <header class="header">
+            <div class="logo">
+            <img src="/img/pngwing.com.png" height="68" width="68" alt="msg_logo"/>
+            <h1>Today I Learned</h1>
+            </div>
+            <button class="btn btn-large btn-open">Share a Fact</button>
+        </header>
+        
+        <form class="fact-form hidden">
+            <input type="text" placeholder="share a fact with world"/>
+            <span>200</span>
+            <input type="text" placeholder="Trustworthy source"/>
+            <select>
+                <option value="">Choose Category</option>
+                <option value="technology">Technology</option>
+                <option value="science">Science</option>
+                <option value="finance">Finance</option>
+            </select>
+            <button class="btn btn-large">Post</button>
+        </form>
+        <main class="main">
+            <aside>
+                <ul>
+                    <li class="category">
+                        <button class="btn btn-all-categories">ALL</button>
+                    </li>
+                    <li class="category">
+                        <button class="btn btn-category" style="background-color: #3b82f6;">TECHNOLOGY</button>
+                    </li>
+                    <li class="category">
+                        <button class="btn btn-category" style="background-color: #16a34a;">SCIENCE</button>
+                    </li>
+                </ul>
+            </aside>
+            <section>
+                <ul class="facts-list">
+                    <li class="fact">
+                        <p>React is being developed by Meta (formerly Facebook) <a class="source" href="https://www.google.com/technology/" target="_blank">(Source)</a></p>
+                        <span class="tag" style="background-color:#3b82f6;">technology</span>
+                        
+                        <div class="vote-buttons">
+                            <button>👍 24</button>
+                            <button>🤯 9</button>
+                            <button>👎 3</button> 
+                        </div>
+                    </li>
+                    <li class="fact">
+                        <p>Git is Distributed Version Control System <a class="source" href="https://www.google.com/technology/" target="_blank">(Source)</a> </p>
+                        <span class="tag" style="background-color: #3b82f6;">technology</span>
+                        
+                        <div class="vote-buttons">
+                            <button>👍 30</button>
+                            <button>🤯 3</button>
+                            <button>👎 2</button> 
+                        </div>
+                    </li>  
+                </ul> 
+            </section>
+        </main>
+        
+        
+        </div> 
+        <script src="/js/script.js"></script>
+    </body>
+</html>
