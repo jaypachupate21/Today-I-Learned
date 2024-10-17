@@ -7,17 +7,30 @@
 body {
   background-color: #292524;
   color: #fafaf9;
-  font-family: "Sono", sans-serif;
-  padding: 48px 64px;
+  font-family: 'Sono', sans-serif;
+  padding: 48px 64px 0px;
 }
 
 .hidden {
   display: none !important;
 }
 
-/* MAIN LAYOUT */
+.message {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 24px;
+}
 
-.container {
+.disputed {
+  color: #ef4444;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+/* MAIN LAYOUT */
+#root {
   max-width: 1500px;
   margin: 0 auto;
 }
@@ -28,6 +41,29 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+
+.main {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 48px;
+
+  height: calc(100vh - 48px - 68px - 40px);
+}
+
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+
+    height: auto;
+  }
+}
+
+section {
+  overflow: scroll;
+  padding-bottom: 40px;
+}
+
+/* ELEMENTS */
 
 .logo {
   display: flex;
@@ -40,24 +76,10 @@ body {
   height: 68px;
 }
 
-.main {
-  display: grid;
-  grid-template-columns: 250px 1fr;
-  gap: 48px;
-}
-
-@media (max-width: 900px) {
-  .main {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ELEMENTS */
 h1 {
   font-size: 42px;
   text-transform: uppercase;
-  text-align: center;
-  font-family: "Coiny", sans-serif;
+  font-family: 'Coiny', sans-serif;
   line-height: 1;
   margin-top: 6px;
 }
@@ -69,11 +91,12 @@ h1 {
 .fact {
   font-size: 20px;
   line-height: 1.4;
+  background-color: #44403c;
   margin-bottom: 16px;
   padding: 16px 24px;
   letter-spacing: -1px;
-  background-color: #44403c;
   border-radius: 16px;
+
   display: flex;
   align-items: center;
   gap: 24px;
@@ -90,7 +113,7 @@ h1 {
 .tag {
   text-transform: uppercase;
   font-size: 14px;
-  font-family: "Coiny", sans-serif;
+  font-family: 'Coiny', sans-serif;
   padding-top: 3px;
   padding-left: 10px;
   padding-right: 10px;
@@ -100,16 +123,17 @@ h1 {
 .vote-buttons {
   margin-left: auto;
   flex-shrink: 0;
+
   display: flex;
   gap: 8px;
 }
 
 .vote-buttons button {
-  background-color: #78716c;
   border: none;
+  background-color: #78716c;
   font-size: 18px;
   padding: 6px 12px;
-  border-radius: 100%;
+  border-radius: 100px;
   color: inherit;
   font-family: inherit;
   font-weight: 600;
@@ -119,6 +143,10 @@ h1 {
 
 .vote-buttons button:hover {
   background-color: #292524;
+}
+
+.vote-buttons button:disabled {
+  background-color: #44403c;
 }
 
 ul {
@@ -140,7 +168,7 @@ ul {
 
 .btn {
   border: none;
-  font-family: "Coiny", sans-serif;
+  font-family: 'Coiny', sans-serif;
   line-height: 1;
   text-transform: uppercase;
   font-size: 17px;
@@ -171,7 +199,7 @@ ul {
   background-image: none;
 }
 
-/* fact form */
+/* FORM */
 .fact-form {
   background-color: #44403c;
   margin-bottom: 40px;
@@ -184,8 +212,8 @@ ul {
 
 .fact-form input,
 .fact-form select {
-  background-color: #78716c;
   width: 220px;
+  background-color: #78716c;
   border: none;
   border-radius: 100px;
   padding: 16px;
@@ -210,7 +238,7 @@ ul {
 
 @media (max-width: 1000px) {
   body {
-    padding: 32px 48px;
+    /* padding: 32px 48px; */
   }
 
   .fact-form {
