@@ -1,11 +1,11 @@
-#Today I Learned
+# Today I Learned
 
 An interactive web application that allows users to explore, react to, and share interesting facts across multiple categories like Technology, Science, Finance, and more. Built using modern web technologies to ensure a smooth and engaging experience.
 
 
 ---
 
-##Features
+## Features
 
 🗂️ Categorized Facts: Browse facts by categories such as Technology, Science, Finance, Society, Entertainment, Health, and History.
 
@@ -19,7 +19,7 @@ An interactive web application that allows users to explore, react to, and share
 
 ---
 
-##Technologies Used
+## Technologies Used
 
 Frontend: HTML, CSS, JavaScript, React
 
@@ -31,7 +31,7 @@ Deployment: Netlify
 
 ---
 
-##Setup Instructions
+## Setup Instructions
 
 1. Clone the Repository:
 ```
@@ -78,21 +78,21 @@ Add environment variables for Supabase during deployment.
 
 ---
 
-##Live Demo
+## Live Demo
 
 Check out the live version here: [Today I Learned](https://daily-discovery.netlify.app/)
 
 
 ---
 
-##Contributing
+## Contributing
 
 Contributions are welcome! Feel free to fork the repository, make improvements, and submit a pull request.
 
 
 ---
 
-##Screenshots
+## Screenshots
 
 1. Home Page:
 
@@ -103,7 +103,7 @@ Contributions are welcome! Feel free to fork the repository, make improvements, 
 
 ---
 
-Contact
+## Contact
 
 For any queries or suggestions, reach out to me via:
 GitHub: jaypachupate21
