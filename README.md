@@ -94,12 +94,16 @@ Contributions are welcome! Feel free to fork the repository, make improvements, 
 
 ## Screenshots
 
-1. Home Page:
+### 1. Home Page:
+   
+   
    ![screenshot](public/img1.png)
 
 
 
-2. Share a Fact Feature:
+### 2. Share a Fact Feature:
+   
+   
    ![screenshot](public/img2.png)
 
 
